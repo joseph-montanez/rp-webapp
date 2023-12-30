@@ -1,0 +1,8 @@
+services:
+  rust-cross-compile:
+    build:
+      context: .
+      dockerfile: Dockerfile
+#    command: ["./compile-pico.sh"]
+    volumes:
+      - .:/usr/src/myapp
